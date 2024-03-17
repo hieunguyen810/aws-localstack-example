@@ -1,0 +1,14 @@
+## Init NodeJS project
+``` npm init ```
+``` npm install asw-sdk ```
+
+# Creat bucket with awslocal
+
+## Create S3 bucket
+``` awslocal s3api create-bucket --bucket localstackbucket ```
+
+## List bucket:
+``` awslocal s3api list-buckets ```
+
+## List object of the bucket
+``` awslocal s3api list-objects --bucket sample-bucket ```
