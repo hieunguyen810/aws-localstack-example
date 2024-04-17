@@ -1,1 +1,1 @@
-AWS localstack Nodejs - learning
+AWS Localstack Nodejs 

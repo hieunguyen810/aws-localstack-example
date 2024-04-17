@@ -12,3 +12,16 @@
 
 ## List object of the bucket
 ``` awslocal s3api list-objects --bucket sample-bucket ```
+
+## Bucket policy 
+``` awslocal s3api put-bucket-policy --bucket testwebsite --policy file://bucket_policy.json ```
+
+## Sync the contents
+
+``` awslocal s3 sync ./ s3://testwebsite ```
+
+## Enable static website hosting
+``` awslocal s3 website s3://testwebsite/ --index-document index.html --error-document error.html ```
+
+## URL:
+http://testwebsite.s3-website.localhost.localstack.cloud:4566/
